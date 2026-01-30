@@ -8,7 +8,6 @@ import logging
 from typing import Optional
 
 import streamlit as st
-from dotenv import load_dotenv
 
 from crawler import create_crawler
 from text_processing import create_text_processor
@@ -19,8 +18,6 @@ from qa_chain import create_qa_chain
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Load environment variables
-load_dotenv()
 
 # Page configuration
 st.set_page_config(
